@@ -1,0 +1,121 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec  4 22:40:22 2019
+# Process ID: 2352
+# Current directory: D:/Work/Freelancing/Current/sultan68/ProjectVerilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11488 D:\Work\Freelancing\Current\sultan68\ProjectVerilog\verilogGame.xpr
+# Log file: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/vivado.log
+# Journal file: D:/Work/Freelancing/Current/sultan68/ProjectVerilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 699.172 ; gain = 118.934
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+ERROR: [Vivado 12-1088] Step 'write_bitstream' needs to be reset before launching.
+The step can be reset using the Tcl command 'reset_run'. See argument '-prev_step' and '-from_step' for more info.
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  4 22:51:12 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  4 22:53:24 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Wed Dec  4 22:53:24 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec  4 23:18:23 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Wed Dec  4 23:18:23 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 00:15:50 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 00:15:50 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 00:31:05 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 00:31:05 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 00:48:08 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 00:48:08 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 01:00:32 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 01:00:32 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 01:07:51 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 01:07:51 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 01:10:52 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 01:10:52 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 01:16:56 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 01:16:56 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 01:20:15 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 01:20:15 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 01:27:48 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 01:27:48 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 01:32:56 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 01:32:56 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 01:37:06 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 01:37:06 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 01:46:16 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 01:46:16 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Dec  5 01:53:50 2019] Launched synth_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/synth_1/runme.log
+[Thu Dec  5 01:53:50 2019] Launched impl_1...
+Run output will be captured here: D:/Work/Freelancing/Current/sultan68/ProjectVerilog/verilogGame.runs/impl_1/runme.log

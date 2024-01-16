@@ -1,0 +1,648 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov 19 23:58:10 2021
+# Process ID: 10316
+# Current directory: C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.runs/synth_1
+# Command line: vivado.exe -log top_pong_game.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_pong_game.tcl
+# Log file: C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.runs/synth_1/top_pong_game.vds
+# Journal file: C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_pong_game.tcl -notrace
+Command: synth_design -top top_pong_game -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15624 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 356.469 ; gain = 100.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_pong_game' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/top_pong_game.v:23]
+	Parameter nbits bound to: 12 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vga_display' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/vga_display.v:23]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+	Parameter state1 bound to: 1'b0 
+	Parameter state2 bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'generate_pulse' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+	Parameter COUNT bound to: 4 - type: integer 
+	Parameter nbits bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generate_pulse' (1#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+WARNING: [Synth 8-350] instance 'gp1' of module 'generate_pulse' requires 6 connections, but only 5 given [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/vga_display.v:143]
+INFO: [Synth 8-6157] synthesizing module 'dflipflop' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/dflipflop.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dflipflop' (2#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/dflipflop.v:23]
+INFO: [Synth 8-6157] synthesizing module 'generate_pulse__parameterized0' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+	Parameter COUNT bound to: 800 - type: integer 
+	Parameter nbits bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generate_pulse__parameterized0' (2#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+WARNING: [Synth 8-689] width (10) of port connection 'q' does not match port width (11) of module 'generate_pulse__parameterized0' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/vga_display.v:183]
+WARNING: [Synth 8-350] instance 'gp2' of module 'generate_pulse' requires 6 connections, but only 5 given [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/vga_display.v:178]
+INFO: [Synth 8-6157] synthesizing module 'generate_pulse__parameterized1' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+	Parameter COUNT bound to: 525 - type: integer 
+	Parameter nbits bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generate_pulse__parameterized1' (2#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+WARNING: [Synth 8-689] width (10) of port connection 'q' does not match port width (11) of module 'generate_pulse__parameterized1' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/vga_display.v:191]
+WARNING: [Synth 8-350] instance 'gp3' of module 'generate_pulse' requires 6 connections, but only 5 given [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/vga_display.v:186]
+INFO: [Synth 8-6155] done synthesizing module 'vga_display' (3#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/vga_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/register.v:23]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (4#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/FSM.v:23]
+	Parameter game_start bound to: 2'b00 
+	Parameter play bound to: 2'b01 
+	Parameter inc_diff bound to: 2'b10 
+	Parameter lose bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'generate_pulse__parameterized2' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+	Parameter COUNT bound to: 250000000 - type: integer 
+	Parameter nbits bound to: 28 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generate_pulse__parameterized2' (4#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+WARNING: [Synth 8-350] instance 'gp4' of module 'generate_pulse' requires 6 connections, but only 5 given [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/FSM.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'FSM' (5#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/FSM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'update_bar' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/update_bar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'generate_pulse__parameterized3' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+	Parameter COUNT bound to: 1000000 - type: integer 
+	Parameter nbits bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generate_pulse__parameterized3' (5#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+WARNING: [Synth 8-350] instance 'gp5' of module 'generate_pulse' requires 6 connections, but only 5 given [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/update_bar.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'update_bar' (6#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/update_bar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ball_traj' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/ball_traj.v:23]
+	Parameter RADIUS bound to: 15 - type: integer 
+	Parameter WIDTH bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ball_traj' (7#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/ball_traj.v:23]
+INFO: [Synth 8-6157] synthesizing module 'draw_ball' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/draw_ball.v:23]
+	Parameter RADIUS bound to: 15 - type: integer 
+	Parameter radsq bound to: 20'b00000000000011100001 
+INFO: [Synth 8-6155] done synthesizing module 'draw_ball' (8#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/draw_ball.v:23]
+INFO: [Synth 8-6157] synthesizing module 'draw_bar' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/draw_bar.v:23]
+	Parameter WIDTH bound to: 15 - type: integer 
+	Parameter wid bound to: 15 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'ver' should be on the sensitivity list [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/draw_bar.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'draw_bar' (9#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/draw_bar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_display' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/sevenseg_display.v:23]
+	Parameter S1 bound to: 2'b00 
+	Parameter S2 bound to: 2'b01 
+	Parameter S3 bound to: 2'b10 
+	Parameter S4 bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'hex2seven' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/hex2seven.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hex2seven' (10#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/hex2seven.v:23]
+INFO: [Synth 8-6157] synthesizing module 'generate_pulse__parameterized4' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+	Parameter COUNT bound to: 100000 - type: integer 
+	Parameter nbits bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generate_pulse__parameterized4' (10#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+WARNING: [Synth 8-350] instance 'gp6' of module 'generate_pulse' requires 6 connections, but only 4 given [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/sevenseg_display.v:52]
+WARNING: [Synth 8-567] referenced signal 'A' should be on the sensitivity list [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/sevenseg_display.v:59]
+WARNING: [Synth 8-567] referenced signal 'B' should be on the sensitivity list [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/sevenseg_display.v:59]
+WARNING: [Synth 8-567] referenced signal 'C' should be on the sensitivity list [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/sevenseg_display.v:59]
+WARNING: [Synth 8-567] referenced signal 'D' should be on the sensitivity list [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/sevenseg_display.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_display' (11#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/sevenseg_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cal_score' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/cal_score.v:23]
+INFO: [Synth 8-6157] synthesizing module 'generate_pulse__parameterized5' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+	Parameter COUNT bound to: 15 - type: integer 
+	Parameter nbits bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generate_pulse__parameterized5' (11#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'q' does not match port width (5) of module 'generate_pulse__parameterized5' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/cal_score.v:38]
+WARNING: [Synth 8-350] instance 'gp7' of module 'generate_pulse' requires 6 connections, but only 5 given [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/cal_score.v:33]
+INFO: [Synth 8-6157] synthesizing module 'generate_pulse__parameterized6' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+	Parameter COUNT bound to: 255 - type: integer 
+	Parameter nbits bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generate_pulse__parameterized6' (11#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/generate_pulse.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'q' does not match port width (9) of module 'generate_pulse__parameterized6' [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/cal_score.v:47]
+WARNING: [Synth 8-350] instance 'gp8' of module 'generate_pulse' requires 6 connections, but only 5 given [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/cal_score.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'cal_score' (12#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/cal_score.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_pong_game' (13#1) [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/top_pong_game.v:23]
+WARNING: [Synth 8-3331] design update_bar has unconnected port en
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.285 ; gain = 156.605
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin gp6:sclr to constant 0 [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/sevenseg_display.v:52]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.285 ; gain = 156.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 412.285 ; gain = 156.605
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/constrs_1/new/vga_game.xdc]
+Finished Parsing XDC File [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/constrs_1/new/vga_game.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/constrs_1/new/vga_game.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_pong_game_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_pong_game_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 767.074 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 767.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 767.082 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 767.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 767.082 ; gain = 511.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 767.082 ; gain = 511.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 767.082 ; gain = 511.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "z" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclr_HC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sclr_VC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "z" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'FSM'
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gs" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "up_score" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_reg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/ball_traj.v:64]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/ball_traj.v:65]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/draw_ball.v:42]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.srcs/sources_1/new/draw_ball.v:41]
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "z" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              game_start |                               00 |                               00
+                inc_diff |                               01 |                               10
+                    play |                               10 |                               01
+                    lose |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'FSM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 767.082 ; gain = 511.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     29 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   3 Input     10 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 9     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 5     
+	   3 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_pong_game 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+Module generate_pulse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module dflipflop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module generate_pulse__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module generate_pulse__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_display 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 11    
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module generate_pulse__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+Module generate_pulse__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module update_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 4     
++---Registers : 
+	                9 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      5 Bit        Muxes := 2     
+Module ball_traj 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module draw_ball 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+Module draw_bar 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+Module generate_pulse__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module sevenseg_display 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+Module generate_pulse__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module generate_pulse__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "vd1/gp1/z" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "vd1/sclr_HC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vd1/sclr_VC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "controller/gp4/z" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ub1/gp5/z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sd1/gp6/z" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP db/boundary0, operation Mode is: A*B.
+DSP Report: operator db/boundary0 is absorbed into DSP db/boundary0.
+WARNING: [Synth 8-3917] design top_pong_game has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design top_pong_game has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design top_pong_game has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design top_pong_game has port AN[4] driven by constant 1
+WARNING: [Synth 8-3917] design top_pong_game has port AN[2] driven by constant 1
+WARNING: [Synth 8-3917] design top_pong_game has port AN[1] driven by constant 1
+INFO: [Synth 8-3886] merging instance 'r1/Qt_reg[0]' (FDE) to 'r1/Qt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1/Qt_reg[1]' (FDE) to 'r1/Qt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1/Qt_reg[2]' (FDE) to 'r1/Qt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'r1/Qt_reg[4]' (FDE) to 'r1/Qt_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1/Qt_reg[5]' (FDE) to 'r1/Qt_reg[7]'
+INFO: [Synth 8-3886] merging instance 'r1/Qt_reg[6]' (FDE) to 'r1/Qt_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\r1/Qt_reg[7] )
+INFO: [Synth 8-3886] merging instance 'r1/Qt_reg[8]' (FDE) to 'r1/Qt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'r1/Qt_reg[9]' (FDE) to 'r1/Qt_reg[11]'
+INFO: [Synth 8-3886] merging instance 'r1/Qt_reg[10]' (FDE) to 'r1/Qt_reg[11]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 767.082 ; gain = 511.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|draw_ball   | A*B         | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 805.148 ; gain = 549.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 849.430 ; gain = 593.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 850.496 ; gain = 594.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 850.496 ; gain = 594.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 850.496 ; gain = 594.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 850.496 ; gain = 594.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 850.496 ; gain = 594.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 850.496 ; gain = 594.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 850.496 ; gain = 594.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    81|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |    15|
+|5     |LUT2    |   185|
+|6     |LUT3    |    79|
+|7     |LUT4    |   116|
+|8     |LUT5    |    56|
+|9     |LUT6    |    59|
+|10    |FDCE    |   141|
+|11    |FDPE    |     7|
+|12    |FDRE    |     7|
+|13    |IBUF    |     7|
+|14    |OBUF    |    31|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------+-------------------------------+------+
+|      |Instance          |Module                         |Cells |
++------+------------------+-------------------------------+------+
+|1     |top               |                               |   787|
+|2     |  bt              |ball_traj                      |   122|
+|3     |  controller      |FSM                            |    78|
+|4     |    gp4           |generate_pulse__parameterized2 |    74|
+|5     |  db              |draw_ball                      |   130|
+|6     |  db1             |draw_bar                       |     4|
+|7     |  db2             |draw_bar_0                     |     4|
+|8     |  nolabel_line180 |cal_score                      |    45|
+|9     |    gp7           |generate_pulse__parameterized5 |    12|
+|10    |    gp8           |generate_pulse__parameterized6 |    33|
+|11    |  r1              |register                       |     9|
+|12    |  sd1             |sevenseg_display               |    51|
+|13    |    gp6           |generate_pulse__parameterized4 |    47|
+|14    |  ub1             |update_bar                     |   188|
+|15    |    gp5           |generate_pulse__parameterized3 |    54|
+|16    |  vd1             |vga_display                    |   116|
+|17    |    df1           |dflipflop                      |     1|
+|18    |    df2           |dflipflop_1                    |     1|
+|19    |    df3           |dflipflop_2                    |     3|
+|20    |    gp1           |generate_pulse                 |    12|
+|21    |    gp2           |generate_pulse__parameterized0 |    46|
+|22    |    gp3           |generate_pulse__parameterized1 |    52|
++------+------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 850.496 ; gain = 594.816
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 850.496 ; gain = 240.020
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 850.496 ; gain = 594.816
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 850.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+89 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 850.496 ; gain = 597.098
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 850.496 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sumes/OneDrive/Personal_work/enrique_carbone/ProjectVerilog/verilogGame.runs/synth_1/top_pong_game.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_pong_game_utilization_synth.rpt -pb top_pong_game_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 19 23:58:51 2021...
